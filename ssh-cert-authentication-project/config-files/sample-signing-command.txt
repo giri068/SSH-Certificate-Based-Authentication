@@ -1,0 +1,6 @@
+# CA Admin signs user's public key with 10-minute validity
+ssh-keygen -s ca-key -I internuser1@lab \
+  -n internuser1 \
+  -V +10m \
+  -z 1 \
+  /home/user/internuser-key.pub

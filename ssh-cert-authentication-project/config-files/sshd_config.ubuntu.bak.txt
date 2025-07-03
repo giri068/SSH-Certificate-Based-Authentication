@@ -1,0 +1,5 @@
+# SSHD Config - Ubuntu Final Server (after adding CA trust)
+TrustedUserCAKeys /etc/ssh/ca.pub
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitRootLogin no

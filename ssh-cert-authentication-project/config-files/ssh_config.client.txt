@@ -1,0 +1,14 @@
+Host ubuntu
+  HostName 192.168.56.115
+  User internuser1
+  IdentityFile ~/.ssh/internuser-key
+  CertificateFile ~/.ssh/internuser-key-cert.pub
+  ProxyJump kali
+  IdentitiesOnly yes
+
+Host kali
+  HostName 192.168.56.113
+  User internuser1
+  IdentityFile ~/.ssh/internuser-key
+  CertificateFile ~/.ssh/internuser-key-cert.pub
+  IdentitiesOnly yes
